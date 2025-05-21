@@ -1,8 +1,9 @@
-export default function AdvisorDetailPage({ params }: { params: { advisorId: string } }) {
+import React from 'react'
+
+const page = () => {
   return (
-    <div>
-      <h1>Advisor Detail</h1>
-      <p>Advisor ID: {params.advisorId}</p>
-    </div>
-  );
+    <div>page</div>
+  )
 }
+
+export default page

@@ -1,8 +1,9 @@
-export default function PlanDetailPage({ params }: { params: { planId: string } }) {
+import React from 'react'
+
+const page = () => {
   return (
-    <div>
-      <h1>Plan Detail</h1>
-      <p>Plan ID: {params.planId}</p>
-    </div>
-  );
+    <div>page</div>
+  )
 }
+
+export default page

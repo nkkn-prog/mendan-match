@@ -1,7 +1,11 @@
-export default function DashboardPage() {
+import React from 'react'
+
+const DashboardPage = () => {
   return (
     <div>
       <h1>Dashboard</h1>
     </div>
   );
 }
+
+export default DashboardPage

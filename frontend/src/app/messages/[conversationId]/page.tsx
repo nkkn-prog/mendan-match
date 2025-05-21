@@ -1,8 +1,9 @@
-export default function ConversationPage({ params }: { params: { conversationId: string } }) {
+import React from 'react'
+
+const page = () => {
   return (
-    <div>
-      <h1>Conversation</h1>
-      <p>Conversation ID: {params.conversationId}</p>
-    </div>
-  );
+    <div>page</div>
+  )
 }
+
+export default page
