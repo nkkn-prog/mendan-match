@@ -1,0 +1,18 @@
+FROM node:20-alpine
+WORKDIR /var/www/html
+
+# 開発環境の設定
+ENV NODE_ENV=development
+
+# 依存関係のインストール
+COPY package*.json ./
+RUN npm install
+
+# ソースコードのコピー
+COPY . .
+
+# ホットリロード用のポート
+EXPOSE 3000
+
+# 開発サーバーの起動
+CMD ["npm", "run", "dev"] 
